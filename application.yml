@@ -1,0 +1,17 @@
+#保存格式必须是UTF8，防止编码错误
+
+spring:
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: dev
+  application:
+    name: spring-cloud-config-dev
+
+---
+spring:
+  profiles: test
+  application:
+    name: spring-cloud-config-test
